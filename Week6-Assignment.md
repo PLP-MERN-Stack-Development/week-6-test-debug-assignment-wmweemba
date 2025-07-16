@@ -27,7 +27,7 @@ Implement comprehensive testing strategies for a MERN stack application, includi
 - Test authentication flows
 - Create tests for form submissions and data validation
 
-### Task 4: End-to-End Testing 
+### Task 4: End-to-End Testing [x]
 - Set up Cypress or Playwright for end-to-end testing
 - Create tests for critical user flows (e.g., registration, login, CRUD operations)
 - Test navigation and routing

@@ -14,3 +14,5 @@
 - Added frontend authentication context, login/register forms, JWT handling, and protected UI.
 - Implemented frontend validation for forms and integrated authentication flows.
 - Added integration tests for frontend authentication, validation, and protected access to shopping list.
+- Set up Cypress for end-to-end testing in the frontend.
+- Added E2E tests for registration, login, CRUD operations, navigation, error handling, and visual regression of the shopping list UI.
