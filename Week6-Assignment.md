@@ -5,14 +5,14 @@ Implement comprehensive testing strategies for a MERN stack application, includi
 
 ## 📂 Tasks
 
-### Task 1: Setting Up Testing Environment
+### Task 1: Setting Up Testing Environment [x]
 - Configure Jest as the testing framework for both client and server
 - Set up testing utilities for React components (React Testing Library)
 - Configure Supertest for API endpoint testing
 - Create a separate test database for integration tests
 - Implement test scripts in package.json for running different types of tests
 
-### Task 2: Unit Testing
+### Task 2: Unit Testing [x]
 - Write unit tests for utility functions in both client and server
 - Test React components in isolation using mocks for dependencies
 - Implement tests for Redux reducers and actions (if applicable)
@@ -20,14 +20,14 @@ Implement comprehensive testing strategies for a MERN stack application, includi
 - Test Express middleware functions
 - Achieve at least 70% code coverage for unit tests
 
-### Task 3: Integration Testing
+### Task 3: Integration Testing [x]
 - Write tests for API endpoints using Supertest
 - Test database operations with a test database
 - Implement integration tests for React components that interact with APIs
 - Test authentication flows
 - Create tests for form submissions and data validation
 
-### Task 4: End-to-End Testing
+### Task 4: End-to-End Testing 
 - Set up Cypress or Playwright for end-to-end testing
 - Create tests for critical user flows (e.g., registration, login, CRUD operations)
 - Test navigation and routing

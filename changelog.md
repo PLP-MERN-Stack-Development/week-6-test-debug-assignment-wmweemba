@@ -8,5 +8,9 @@
 
 ## [16-07-2025]
 ### Added
-- Added 'dev' script and nodemon to backend for development auto-reload.
-- Configured Vite proxy in frontend to enable API requests to backend during development.
+- Implemented backend authentication with JWT, user registration and login, and protected shopping list routes.
+- Added advanced validation for user and item endpoints using express-validator.
+- Created integration tests for backend authentication, validation, and protected routes.
+- Added frontend authentication context, login/register forms, JWT handling, and protected UI.
+- Implemented frontend validation for forms and integrated authentication flows.
+- Added integration tests for frontend authentication, validation, and protected access to shopping list.
