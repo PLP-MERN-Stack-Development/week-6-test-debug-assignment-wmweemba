@@ -23,3 +23,7 @@
 - Enhanced Express global error handler to use Winston for error logging.
 - Added React ErrorBoundary component and wrapped app for global UI error catching.
 - Provided instructions for using browser developer tools and performance monitoring in both backend and frontend.
+
+## [17-07-2025]
+### Changed
+- Completely rewrote README.md to provide a full project description, usage guide, folder structure, and comprehensive testing strategy documentation.

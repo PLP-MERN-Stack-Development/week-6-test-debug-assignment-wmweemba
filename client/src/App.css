@@ -1,37 +1,119 @@
-body {
+html, body, #root {
+  height: 100%;
+  width: 100%;
   margin: 0;
-  font-family: system-ui, sans-serif;
-  background: #f8fafc;
-  min-height: 100vh;
+  padding: 0;
 }
 
-#root, .app-container {
+body, #root {
   min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8fafc;
+}
+
+.app-container, .auth-container {
+  min-height: 70vh;
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.09);
+  padding: 2.5rem 1.5rem 2rem 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  margin: auto;
 }
 
-.app-container {
+.auth-container {
   width: 100%;
-  max-width: 400px;
+  max-width: 350px;
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.07);
   padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-toggle {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.auth-toggle button {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 6px 6px 0 0;
+  background: #6366f1;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.auth-toggle button.active,
+.auth-toggle button:hover {
+  background: #4f46e5;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.auth-form input {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #222;
+  color: #fff;
+}
+
+.auth-form button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #6366f1;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.auth-form button:hover {
+  background: #4f46e5;
+}
+
+.auth-form .error {
+  color: #e11d48;
+  background: #fef2f2;
+  border-radius: 6px;
+  padding: 0.5rem;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 h2 {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.7rem;
+  text-align: center;
 }
 
 form {
   display: flex;
   gap: 0.5rem;
   margin-bottom: 1.5rem;
+  width: 100%;
 }
 
 input[type="text"], input[type="search"], input {
@@ -40,6 +122,8 @@ input[type="text"], input[type="search"], input {
   border: 1px solid #ddd;
   border-radius: 6px;
   font-size: 1rem;
+  background: #222;
+  color: #fff;
 }
 
 button {
@@ -60,21 +144,39 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
 li {
   background: #f1f5f9;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
   padding: 0.75rem 1rem;
-  border-radius: 8px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 1rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+
+.logout-btn {
+  background: #e11d48;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  align-self: center;
+  transition: background 0.2s;
+}
+.logout-btn:hover {
+  background: #be123c;
 }
 
 @media (min-width: 600px) {
-  .app-container {
+  .app-container, .auth-container {
     max-width: 500px;
     padding: 2.5rem 2rem;
   }
