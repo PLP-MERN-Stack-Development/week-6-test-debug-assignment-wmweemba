@@ -16,3 +16,10 @@
 - Added integration tests for frontend authentication, validation, and protected access to shopping list.
 - Set up Cypress for end-to-end testing in the frontend.
 - Added E2E tests for registration, login, CRUD operations, navigation, error handling, and visual regression of the shopping list UI.
+
+## [17-07-2025]
+### Added
+- Integrated Winston logger for advanced server-side logging and persistent error tracking.
+- Enhanced Express global error handler to use Winston for error logging.
+- Added React ErrorBoundary component and wrapped app for global UI error catching.
+- Provided instructions for using browser developer tools and performance monitoring in both backend and frontend.
